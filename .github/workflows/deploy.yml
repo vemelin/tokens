@@ -34,13 +34,13 @@ jobs:
       - uses: actions/checkout@v2
       - uses: andstor/copycat-action@v3.2.4
         with:
-          personal_token: ${{ secrets.DESIGN_TOKEN }}
-          src_branch: main
-          src_path: output/.
-          dst_owner: vemelin
-          dst_repo_name: celebration-cards
-          dst_branch: design-tokens
-          dst_path: sccs/.
-          username: vemelin
-          email: vemelin@gmail.com
-          commit_message: "Copy CSS tokens"
+          personal_token: ${{ secrets.DESIGN_TOKEN }}    # Ensure your PAT is valid and has the right permissions
+          src_branch: main                         # Source branch in the current repository
+          src_path: tokens/output/.                # Path in the source repository to copy files from
+          dst_owner: vemelin                       # GitHub username (or organization name)
+          dst_repo_name: celebration-cards         # Destination repository name
+          dst_branch: design-tokens                # Branch in the destination repository
+          dst_path: scss/.                         # Path in the destination repository
+          username: vemelin                        # GitHub username (used for commits)
+          email: vemelin@gmail.com                 # Commit email
+          commit_message: "Copy CSS tokens"        # Custom commit message
