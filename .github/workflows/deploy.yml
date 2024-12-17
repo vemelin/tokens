@@ -44,7 +44,7 @@ jobs:
           email: vemelin@gmail.com                        # Commit email
           commit_message: "Copy CSS tokens"               # Custom commit message
           
-          - name: Verify Authentication and Repo Access
-            run: |
-              echo "${{ secrets.DESIGN_TOKEN }}" | gh auth login --with-token
-              gh repo view vemelin/dst_tokens
+      - name: Verify Authentication and Repo Access
+        run: |
+          echo "${{ secrets.DESIGN_TOKEN }}" | gh auth login --with-token
+          gh repo view vemelin/dst_tokens
