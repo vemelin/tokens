@@ -1,0 +1,212 @@
+{
+  "Typography": {
+    "Display XL": {
+      "Font weight": {
+        "value": "Bold",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 54,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 64,
+        "type": "number"
+      }
+    },
+    "Display L": {
+      "Font weight": {
+        "value": "Medium",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 42,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 48,
+        "type": "number"
+      }
+    },
+    "Display M": {
+      "Font weight": {
+        "value": "Medium",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 32,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 40,
+        "type": "number"
+      }
+    },
+    "Display S": {
+      "Font weight": {
+        "value": "Medium",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 26,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 32,
+        "type": "number"
+      }
+    },
+    "Headline": {
+      "Font weight": {
+        "value": "Medium",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 20,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 24,
+        "type": "number"
+      }
+    },
+    "Subhead-Md": {
+      "Font weight": {
+        "value": "Medium",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 17,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 24,
+        "type": "number"
+      }
+    },
+    "Body-Md": {
+      "Font weight": {
+        "value": "Medium",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 14,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 20,
+        "type": "number"
+      }
+    },
+    "Caption 1": {
+      "Font weight": {
+        "value": "Regular",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 13,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 20,
+        "type": "number"
+      }
+    },
+    "Caption 2": {
+      "Font weight": {
+        "value": "Regular",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 12,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 16,
+        "type": "number"
+      }
+    },
+    "Inline": {
+      "Font weight": {
+        "value": "Regular",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 14,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 24,
+        "type": "number"
+      }
+    },
+    "Standalone": {
+      "Font weight": {
+        "value": "Bold",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 12,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 16,
+        "type": "number"
+      },
+      "Line spacing": {
+        "value": 1.600000023841858,
+        "type": "number"
+      }
+    },
+    "Button": {
+      "Font weight": {
+        "value": "Bold",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 14,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 16,
+        "type": "number"
+      },
+      "Line spacing": {
+        "value": 1.600000023841858,
+        "type": "number"
+      }
+    },
+    "Subhead": {
+      "Font weight": {
+        "value": "Regular",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 17,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 24,
+        "type": "number"
+      }
+    },
+    "Body": {
+      "Font weight": {
+        "value": "Regular",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 14,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 20,
+        "type": "number"
+      }
+    },
+    "Font Family": {
+      "value": "Roboto",
+      "type": "text"
+    }
+  }
+}

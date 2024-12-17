@@ -1,0 +1,11 @@
+{
+  "tokenSetOrder": [
+    "Global/Value",
+    "Alias/Steel",
+    "Alias/Tango",
+    "Mapped/Light",
+    "Desktop/value",
+    "Native/Android",
+    "Native/iOS"
+  ]
+}

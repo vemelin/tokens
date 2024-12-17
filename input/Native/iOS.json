@@ -1,0 +1,240 @@
+{
+  "Mobile": {
+    "Font family": {
+      "value": "SF Pro",
+      "type": "text"
+    },
+    "Display XL": {
+      "Font weight": {
+        "value": "Semibold",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 34,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 41,
+        "type": "number"
+      },
+      "Letter spacing": {
+        "value": 0,
+        "type": "number"
+      }
+    },
+    "Display L": {
+      "Font weight": {
+        "value": "Semibold",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 28,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 34,
+        "type": "number"
+      },
+      "Letter spacing": {
+        "value": 0.3799999952316284,
+        "type": "number"
+      }
+    },
+    "Display M": {
+      "Font weight": {
+        "value": "Semibold",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 22,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 28,
+        "type": "number"
+      },
+      "Letter spacing": {
+        "value": -0.25999999046325684,
+        "type": "number"
+      }
+    },
+    "Display S": {
+      "Font weight": {
+        "value": "Semibold",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 20,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 25,
+        "type": "number"
+      },
+      "Letter spacing": {
+        "value": -0.44999998807907104,
+        "type": "number"
+      }
+    },
+    "Headline": {
+      "Font weight": {
+        "value": "Semibold",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 17,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 22,
+        "type": "number"
+      },
+      "Letter spacing": {
+        "value": -0.4300000071525574,
+        "type": "number"
+      }
+    },
+    "Body": {
+      "Font weight": {
+        "value": "Regular",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 17,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 22,
+        "type": "number"
+      },
+      "Letter spacing": {
+        "value": -0.4300000071525574,
+        "type": "number"
+      }
+    },
+    "Button": {
+      "Font weight": {
+        "value": "Semibold",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 17,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 22,
+        "type": "number"
+      },
+      "Letter spacing": {
+        "value": -0.4300000071525574,
+        "type": "number"
+      }
+    },
+    "Subhead-Md": {
+      "Font weight": {
+        "value": "Semibold",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 15,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 20,
+        "type": "number"
+      },
+      "Letter spacing": {
+        "value": -0.23000000417232513,
+        "type": "number"
+      }
+    },
+    "Subhead": {
+      "Font weight": {
+        "value": "Regular",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 15,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 20,
+        "type": "number"
+      },
+      "Letter spacing": {
+        "value": -0.23000000417232513,
+        "type": "number"
+      }
+    },
+    "Caption 1-Md": {
+      "Font weight": {
+        "value": "Semibold",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 12,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 16,
+        "type": "number"
+      },
+      "Letter spacing": {
+        "value": 0,
+        "type": "number"
+      }
+    },
+    "Caption 2": {
+      "Font weight": {
+        "value": "Regular",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 11,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 13,
+        "type": "number"
+      },
+      "Letter spacing": {
+        "value": 0.05999999865889549,
+        "type": "number"
+      }
+    },
+    "Caption 1": {
+      "Font weight": {
+        "value": "Regular",
+        "type": "text"
+      },
+      "Font size": {
+        "value": 12,
+        "type": "number"
+      },
+      "Line height": {
+        "value": 16,
+        "type": "number"
+      },
+      "Letter spacing": {
+        "value": 0,
+        "type": "number"
+      }
+    }
+  },
+  "Statusbar": {
+    "value": "iOS",
+    "type": "text"
+  },
+  "Home indicator": {
+    "value": "iOS",
+    "type": "text"
+  },
+  "Width": {
+    "value": 375,
+    "type": "number"
+  },
+  "Min-height": {
+    "value": 812,
+    "type": "number"
+  }
+}

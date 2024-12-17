@@ -1,0 +1,4 @@
+# Dependency directories
+node_modules/
+.vs/
+.DS_Store
