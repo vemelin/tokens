@@ -35,7 +35,7 @@ jobs:
         with:
           personal_token: ${{ secrets.DESIGN_TOKEN }}     # Ensure your PAT is valid and has the right permissions
           src_branch: main                                # Source branch in the current repository
-          src_path: tokens/build/.                              # Path in the source repository to copy files from
+          src_path: build/.                               # Path in the source repository to copy files from
           dst_owner: vemelin                              # GitHub username (or organization name)
           dst_repo_name: dst_tokens                       # Destination repository name
           dst_branch: main                                # Branch in the destination repository
