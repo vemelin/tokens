@@ -26,58 +26,20 @@ jobs:
         with:
           commit_message: build tokens
 
-
   copy_tokens:
     runs-on: ubuntu-latest
     needs: build_tokens
     steps:
-      - name: Checkout Source Repository
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - uses: andstor/copycat-action@v3.2.4
         with:
-          ref: main  # Source branch
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '18'
-
-      - name: Install GitHub CLI
-        run: |
-          sudo apt-get install gh
-
-      - name: Create Destination Branch (if it doesn't exist)
-        env:
-          GITHUB_TOKEN: ${{ secrets.DESIGN_TOKEN }} 
-        run: |
-          # Authenticate with the GitHub CLI
-          echo "${{ secrets.DESIGN_TOKEN }} " | gh auth login --with-token
-          
-          # Check if the branch exists; if not, create it
-          if ! git ls-remote --heads https://github.com/vemelin/celebration-cards.git design-tokens | grep design-tokens; then
-            echo "Branch does not exist. Creating branch 'design-tokens'."
-            git clone https://github.com/vemelin/celebration-cards.git
-            cd celebration-cards
-            git checkout --orphan design-tokens
-            git commit --allow-empty -m "Initialize design-tokens branch"
-            git push origin design-tokens
-          else
-            echo "Branch already exists."
-          fi
-
-      - name: Copy Files to Destination Repository
-        uses: andstor/copycat-action@v3.2.4
-        with:
-          personal_token: ${{ secrets.DESIGN_TOKEN }} 
-          src_branch: main
-          src_path: tokens/output/.
-          dst_owner: vemelin
-          dst_repo_name: dst_tokens
-          dst_branch: main
-          dst_path: scss/.
-          username: vemelin
-          email: vemelin@gmail.com
-          commit_message: "Copy CSS tokens"
-
-      - name: Verify Changes
-        run: |
-          echo "Tokens copied successfully!"
+          personal_token: ${{ secrets.DESIGN_TOKEN }}     # Ensure your PAT is valid and has the right permissions
+          src_branch: main                                # Source branch in the current repository
+          src_path: /build/.                              # Path in the source repository to copy files from
+          dst_owner: vemelin                              # GitHub username (or organization name)
+          dst_repo_name: dst_tokens                       # Destination repository name
+          dst_branch: main                                # Branch in the destination repository
+          dst_path: scss/.                                # Path in the destination repository
+          username: vemelin                               # GitHub username (used for commits)
+          email: vemelin@gmail.com                        # Commit email
+          commit_message: "Copy CSS tokens"               # Custom commit message
