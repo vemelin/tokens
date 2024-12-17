@@ -62,7 +62,7 @@ jobs:
             git push origin design-tokens
           else
             echo "Branch already exists."
-          fidst_tokens
+          fi
 
       - name: Copy Files to Destination Repository
         uses: andstor/copycat-action@v3.2.4
