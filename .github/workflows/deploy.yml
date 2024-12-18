@@ -32,6 +32,8 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
+          git config --global user.name "Vasiliy"
+          git config --global user.email "vemelin@gmail.com"
           git add -A
           git commit -m "Generate CSS tokens"
           git push origin main
