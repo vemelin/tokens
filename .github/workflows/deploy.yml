@@ -31,11 +31,7 @@ jobs:
         run: node build.mjs
 
       - name: Commit and Push Changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --global user.name "Vasiliy"
-          git config --global user.email "vasiliy.emelin@solera.com"
           git add -A
           git commit -m "Generate CSS tokens"
           git push origin main
