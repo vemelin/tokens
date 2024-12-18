@@ -5,7 +5,7 @@ on:
       - main
 
 permissions:
-  contents: read
+  contents: write  # Adjusted for push permissions
   pages: write
   id-token: write
 
@@ -24,11 +24,11 @@ jobs:
       - run: node build.mjs
       - name: Commit and Push Changes
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
+          git config user.name "Vasiliy"
+          git config user.email "vemelin@github.com"
           git add .
           git commit -m "build tokens" || echo "No changes to commit"
-          git push
+          git push origin main
 
   copy_tokens:
     runs-on: ubuntu-latest
@@ -39,14 +39,14 @@ jobs:
           fetch-depth: 0
       - name: Clone Destination Repository
         run: |
-          git clone https://x-access-token:${{ secrets.DESIGN_TOKEN }}@github.com/vemelin/tokens.git destination-repo
+          git clone https://x-access-token:${{ secrets.DESIGN_TOKEN }}@github.com/vemelin/dst_tokens.git destination-repo
           cp -R build/. destination-repo/src/tokens/
           cd destination-repo
-          git config user.name "vemelin"
-          git config user.email "vemelin@gmail.com"
+          git config user.name "Vasiliy"
+          git config user.email "vemelin@github.com"
           git add .
           git commit -m "Copy SCSS tokens" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.DESIGN_TOKEN }}@github.com/vemelin/dst_tokens.git
+          git push
 
 #  copy_tokens:
 #     runs-on: ubuntu-latest
