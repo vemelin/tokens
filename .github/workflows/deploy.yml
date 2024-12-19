@@ -39,8 +39,8 @@ jobs:
           fetch-depth: 0
       - name: Clone Destination Repository
         run: |
-          git clone https://x-access-token:${{ secrets.DESIGN_TOKEN }}@github.com/vemelin/dst_tokens.git destination-repo
-          cp -R build/. destination-repo/src/tokens/
+          git clone https://x-access-token:${{ secrets.DESIGN_TOKEN }}@github.com/vemelin/dst_tokens.git dst_tokens
+          cp -R build/. dst_tokens/src/tokens/
           cd destination-repo
           git config user.name "Vasiliy"
           git config user.email "vemelin@github.com"
