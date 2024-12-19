@@ -1,4 +1,4 @@
-name: Generate & Copy Tokens
+name: Generate & Copy Tokens (Variables)
 on:
   push:
     branches:
