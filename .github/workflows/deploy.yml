@@ -40,8 +40,15 @@ jobs:
       - name: Clone Destination Repository
         run: |
           git clone https://x-access-token:${{ secrets.DESIGN_TOKEN }}@github.com/vemelin/dst_tokens.git dst_tokens
+      - name: Ensure Directory Structure Exists
+        run: |
+          mkdir -p dst_tokens/src/tokens/
+      - name: Copy Files
+        run: |
           cp -R build/. dst_tokens/src/tokens/
-          cd destination-repo
+      - name: Commit and Push Changes
+        run: |
+          cd dst_tokens
           git config user.name "Vasiliy"
           git config user.email "vemelin@github.com"
           git add .
